@@ -1,0 +1,37 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[sql]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+    },
+    "sqlfluff.config": "${workspaceFolder}/.sqlfluff",
+    "sqlfluff.dialect": "databricks",
+    "sqlfluff.executablePath": "sqlfluff",
+    "sqlfluff.ignoreLocalConfig": false,
+    "sqlfluff.ignoreParsing": false,
+    "sqlfluff.rules": [],
+    "sqlfluff.suppressNotifications": false,
+    "sqlfluff.workingDirectory": "",
+    /* Linter */
+    "sqlfluff.linter.arguments": [],
+    "sqlfluff.linter.run": "onType",
+    "sqlfluff.linter.diagnosticSeverity": "error",
+    "sqlfluff.linter.diagnosticSeverityByRule": [
+        {
+            "rule": "L010",
+            "severity": "warning"
+        }
+    ],
+    "sqlfluff.linter.lintEntireProject": true,
+    /* Formatter */
+    "sqlfluff.format.arguments": [
+        "--FIX-EVEN-UNPARSABLE"
+    ],
+    "sqlfluff.format.enabled": true
+}
