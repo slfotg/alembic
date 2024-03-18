@@ -1,0 +1,4 @@
+alembic
+black
+ruff
+databricks-sql-connector[sqlalchemy]
